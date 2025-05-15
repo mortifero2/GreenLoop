@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil / Progresso - GreenLoop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">Voltar</a>
+    <h1>O Meu Perfil</h1>
+  </header>
+
+  <main>
+    <section class="perfil-info">
+      <h2 id="nome"></h2>
+      <p><strong>Empresa:</strong> <span id="empresa"></span></p>
+
+      <hr>
+
+      <h3>🌱 Progresso de Sustentabilidade</h3>
+      <p><strong>Total comprado:</strong> <span id="total-comprado">0</span> kg</p>
+      <p><strong>Revendido:</strong> <span id="total-doado">0</span> kg</p>
+      <p><strong>CO₂ emitido com o material comprado:</strong> <span id="total-co2">0</span> kg</p>
+      <p><strong>Água consumida com o material comprado:</strong> <span id="total-agua">0</span> litros</p>
+
+      <div id="mensagens-progresso" style="margin-top: 1.5rem;"></div>
+
+      <button id="logout">Terminar sessão</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenLoop - Perfil Sustentável</p>
+  </footer>
+
+  <script src="perfil.js"></script>
+</body>
+</html>

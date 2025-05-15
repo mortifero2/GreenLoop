@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registo - ReMat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Registar Conta</h1>
+    <a href="login.html" class="back">Voltar</a>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <form id="form-registo">
+        <label for="primeiro">Primeiro Nome:</label>
+        <input type="text" id="primeiro" required>
+
+        <label for="ultimo">Último Nome:</label>
+        <input type="text" id="ultimo" required>
+
+        <label for="empresa">Nome da Entidade:</label>
+        <input type="text" id="empresa" required>
+
+        <label for="tipo-entidade">Tipo de Entidade:</label>
+        <select id="tipo-entidade" required>
+          <option value="" disabled selected>Seleciona o tipo...</option>
+          <option value="Empresa">Empresa</option>
+          <option value="ONG">ONG</option>
+          <option value="MicroProdutores">MicroProdutores</option>
+          <option value="Particular">Particular</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Palavra-passe:</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Registar</button>
+        <p id="mensagem"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenLoop - Circularidade Facilitada</p>
+  </footer>
+
+  <script src="registo.js"></script>
+</body>
+</html>

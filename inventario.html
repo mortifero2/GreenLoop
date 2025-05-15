@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Meu Material - ReMat</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (!localStorage.getItem("usuario")) {
+      window.location.href = "bloqueado.html";
+    }
+  </script>  
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">Voltar</a>
+    <h1>O Meu Material</h1>
+    <p>Inventário atualizado dos teus materiais</p>
+  </header>
+
+  <main>
+    <section class="lista-materials" id="lista-inventario">
+      <!-- Materiais aparecerão aqui -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenLoop - Inventário de Materiais</p>
+  </footer>
+
+  <script src="inventario.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doar / Trocar Material - ReMat</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    if (!localStorage.getItem("usuario")) {
+      window.location.href = "bloqueado.html";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">Voltar</a>
+    <h1>Revender Material</h1>
+    <p>Insere o código do produto comprado para disponibilizá-lo para revenda.</p>
+  </header>
+
+  <main>
+    <form id="form-doacao">
+      <label for="codigo">Código do produto comprado:</label>
+      <input type="text" id="codigo" placeholder="ex: CIMENTO-004" required>
+
+      <label for="quantidade">Quantidade a revender (kg):</label>
+      <input type="number" id="quantidade" placeholder="ex: 20" min="1" step="0.1" required>
+
+      <label for="tipo">Tipo:</label>
+      <select id="tipo" required>
+        <option value="Doação">Revenda</option>
+        <option value="Troca">Troca</option>
+      </select>
+
+      <label for="descricao">Descrição (opcional):</label>
+      <input type="text" id="descricao" placeholder="Ex: Sobra em bom estado">
+
+      <label for="apoio">Precisa de apoio na entrega?</label>
+      <select id="apoio">
+        <option value="Não" selected>Não</option>
+        <option value="Sim">Sim</option>
+      </select>
+
+      <label for="local">Local de Recolha:</label>
+      <input type="text" id="local" placeholder="ex: Armazém Norte, Rua X, nº123">
+
+      <label for="peso-estimado">Peso estimado (kg):</label>
+      <input type="number" id="peso-estimado" placeholder="ex: 25" min="1" step="0.1">
+
+      <button type="submit">Publicar</button>
+    </form>
+
+    <div id="mensagem" style="margin-top: 20px;"></div>
+
+    <section style="margin-top: 3rem; padding: 1rem; background-color: #f9f9f9; border-radius: 8px;">
+      <h3>📦 Sugestões de Logística Circular - Sujeito a uma taxa</h3>
+      <ul>
+        <li><strong>CTT Expresso Circular:</strong> serviço nacional de recolha e entrega em pequenas quantidades.</li>
+        <li><strong>Transportadora Verde:</strong> rede colaborativa com veículos elétricos.</li>
+        <li><strong>Recolha Local:</strong> contactar ONG ou entidades regionais para recolha colaborativa.</li>
+      </ul>
+      <p style="font-size: 0.9rem; color: #555;">* Funcionalidades futuras poderão incluir geração de etiquetas e integração com APIs de envio.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenLoop - Economia Circular</p>
+  </footer>
+
+  <script src="doacoes.js"></script>
+</body>
+</html>

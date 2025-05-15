@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Registo - ReMat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Entrar na Plataforma</h1>
+    <a href="index.html" class="back">Voltar</a>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Palavra-passe:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Entrar</button>
+
+        <!-- MENSAGEM DE ERRO / SUCESSO -->
+        <p id="mensagem-login"></p>
+
+        <p>Não tens conta? <a href="registo.html">Regista-te aqui</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenLoop - Circularidade Facilitada</p>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>

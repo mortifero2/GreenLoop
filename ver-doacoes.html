@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materiais Disponíveis - GreenLoop</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (!localStorage.getItem("usuario")) {
+      window.location.href = "bloqueado.html";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">Voltar</a>
+    <h1>Materiais para Revenda</h1>
+    <p>Veja abaixo os materiais disponibilizados para outras empresas.</p>
+  </header>
+
+  <main>
+    <section id="lista-doacoes" class="lista-materials">
+      <!-- Conteúdo será gerado por JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenLoop - Reutilização Sustentável</p>
+  </footer>
+
+  <script src="ver-doacoes.js"></script>
+</body>
+</html>
